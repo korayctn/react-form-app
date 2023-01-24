@@ -9,8 +9,8 @@ function TaskItem({ task, onDelete }) {
       <h4 className="title">Description</h4>
       <p>{task.task}</p>
       <div className="buttonDiv">
-        <button onClick={deleteHandle}>Sil</button>
-        <button>Güncelle</button>
+        <button onClick={deleteHandle}>Delete</button>
+        <button>Update</button>
       </div>
     </div>
   );
