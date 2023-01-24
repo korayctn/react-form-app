@@ -26,3 +26,34 @@
   text-align: center;
   border: 1px solid red;
 }
+.taskList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  margin: 3px 0;
+}
+.singleTask {
+  width: 250px;
+  border-radius: 20px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 5px 0 5px;
+  border: 1px solid black;
+}
+.buttonDiv {
+  margin-bottom: 10px;
+}
+.buttonDiv button {
+  margin: 0 5px;
+  padding: 5px 15px;
+  background-color: rgb(255, 0, 0);
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
