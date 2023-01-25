@@ -22,11 +22,22 @@ function App() {
     });
     setTasks(afterDeletedTasks);
   };
+  const editById = (taskId, updatedTitle, updatedTask) => {
+    const updatedTasks = tasks.map((task, index) => {
+      if (task.id === taskId) {
+        debugger;
+        return { taskId, title: updatedTitle, task: updatedTask };
+      } else {
+        return task;
+      }
+    });
+    setTasks(updatedTasks);
+  };
   return (
     <div className="App">
       <TaskCreate onCreate={handleCreate} />
       <h1>Görevlerin</h1>
-      <TaskList allDelete={deleteById} tasks={tasks} />
+      <TaskList allDelete={deleteById} tasks={tasks} onUpdate={editById} />
     </div>
   );
 }

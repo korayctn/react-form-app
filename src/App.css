@@ -57,3 +57,7 @@
   border-radius: 5px;
   color: white;
 }
+
+.taskUpdateDiv {
+  width: 100%;
+}
